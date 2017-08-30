@@ -6,41 +6,7 @@ public class App {
 	public static void main(String args[]) {
 		Scanner in = new Scanner(System.in);
 
-	//	ArrayList<CiaAerea> Lista = new ArrayList<>();
-		
-		String nome =  "a";
-		String destino =  "b";
-		String origem =  "c";
-		
-		CiaAerea[] companhiaVetor;
-		companhiaVetor = new CiaAerea[4];
-		
-		for(int i = 0; i < 4; i++){
-			
-			
-			
-			System.out.println("informe o nome da Cia Aerea: ");
-			nome = in.nextLine();
-				System.out.println("informe a origem do voo: ");
-				origem = in.nextLine();
-					System.out.println("informe  o destino do voo: ");
-					destino = in.nextLine();
-					
-					companhiaVetor[i].setNome(nome);
-					companhiaVetor[i].setOrigem(origem);
-					companhiaVetor[i].setDestino(destino);
-					
-					
-		}
-		
-		for(int j = 0; j < 4 ; j++){
-			companhiaVetor[j].setNome(nome);
-			companhiaVetor[j].setOrigem(origem);
-			companhiaVetor[j].setDestino(destino);
-			
-		}
-		
-		/*
+		ArrayList<CiaAerea> Lista = new ArrayList<>();
 
 		CiaAerea companhia = new CiaAerea("TAM", "POA", "RIO");
 		CiaAerea companhia2 = new CiaAerea("GOL", "POA", "SP");
@@ -58,7 +24,7 @@ public class App {
 			System.out.println("DADOS: " + Lista.get(i));
 
 		}
-*/
+		System.out.println("DADOS da ultima pos: " + Lista.get(4));
 	}
 
 }

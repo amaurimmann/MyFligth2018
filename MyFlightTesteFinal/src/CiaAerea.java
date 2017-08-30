@@ -39,6 +39,17 @@ public class CiaAerea {
 		Origem = origem;
 	}
 
+	
+
+	public ArrayList<Aviao> getListaAviao() {
+		return ListaAviao;
+	}
+
+
+	public void setListaAviao(ArrayList<Aviao> listaAviao) {
+		ListaAviao = listaAviao;
+	}
+
 
 	@Override
 	public String toString() {

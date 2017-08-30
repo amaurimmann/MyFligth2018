@@ -8,9 +8,9 @@ public class App {
 
 	//	ArrayList<CiaAerea> Lista = new ArrayList<>();
 		
-		String nome;
-		String destino;
-		String origem;
+		String nome =  "a";
+		String destino =  "b";
+		String origem =  "c";
 		
 		CiaAerea[] companhiaVetor;
 		companhiaVetor = new CiaAerea[4];
@@ -34,7 +34,9 @@ public class App {
 		}
 		
 		for(int j = 0; j < 4 ; j++){
-			System.out.println("Dados:" + companhiaVetor[j].setNome(nome));
+			companhiaVetor[j].setNome(nome);
+			companhiaVetor[j].setOrigem(origem);
+			companhiaVetor[j].setDestino(destino);
 			
 		}
 		

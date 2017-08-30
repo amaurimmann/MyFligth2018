@@ -1,9 +1,11 @@
+import java.util.ArrayList;
 
 public class CiaAerea {
 	
 	private String Nome;
 	private String Destino;
 	private String Origem;
+	private ArrayList<Aviao> ListaAviao = new ArrayList<>();
 	
 	public CiaAerea(String nome, String destino, String origem) {
 		super();
@@ -37,10 +39,14 @@ public class CiaAerea {
 		Origem = origem;
 	}
 
+
 	@Override
 	public String toString() {
-		return "CiaAerea [Nome=" + Nome + ", Destino=" + Destino + ", Origem=" + Origem + "]";
+		return "CiaAerea [Nome=" + Nome + ", Destino=" + Destino + ", Origem=" + Origem + ", ListaAviao=" + ListaAviao
+				+ "]";
 	}
+
+	
 	
 
 }

@@ -6,7 +6,8 @@ public class App {
 	public static void main(String args[]) {
 		Scanner in = new Scanner(System.in);
 
-		ArrayList<CiaAerea> Lista = new ArrayList<>();
+		ArrayList<CiaAerea> ListaCiaAerea = new ArrayList<>();
+		ArrayList<Aviao> ListaAviao = new ArrayList<>();
 
 		CiaAerea companhia = new CiaAerea("TAM", "POA", "RIO");
 		CiaAerea companhia2 = new CiaAerea("GOL", "POA", "SP");
@@ -15,25 +16,48 @@ public class App {
 		CiaAerea companhia5 = new CiaAerea("TWA", "POA", "NEW YORK");
 		CiaAerea companhia6 = new CiaAerea("TAM", "POA", "SP");
 
-		Lista.add(0, companhia);
-		Lista.add(1, companhia2);
-		Lista.add(2, companhia3);
-		Lista.add(3, companhia4);
-		Lista.add(4, companhia5);
-		Lista.add(5, companhia6);
+		Aviao aviao = new Aviao("AIRBUS380");
+		Aviao aviao2 = new Aviao("BOEING747");
+		Aviao aviao3 = new Aviao("BOEING747");
+		Aviao aviao4 = new Aviao("ANTONOV225");
+		Aviao aviao5 = new Aviao("B17");
+		Aviao aviao6 = new Aviao("AC130");
 
-		for (int i = 0; i < Lista.size(); i++) {
-			System.out.println("DADOS: " + Lista.get(i));
+		ListaCiaAerea.add(0, companhia);
+		ListaCiaAerea.add(1, companhia2);
+		ListaCiaAerea.add(2, companhia3);
+		ListaCiaAerea.add(3, companhia4);
+		ListaCiaAerea.add(4, companhia5);
+		ListaCiaAerea.add(5, companhia6);
 
+		ListaAviao.add(aviao);
+		ListaAviao.add(aviao2);
+		ListaAviao.add(aviao3);
+		ListaAviao.add(aviao4);
+		ListaAviao.add(aviao5);
+		ListaAviao.add(aviao6);
+
+		for (int i = 0; i < ListaCiaAerea.size(); i++) {
+			System.out.println("Dados CiaAerea(" +i +"): "+ ListaCiaAerea.get(i));
 		}
-		System.out.println("DADOS da ultima pos: " + Lista.get(5));
+		System.out.println("DADOS DA ULTIMA POSIÇÂO CIA: " + ListaCiaAerea.get(5));
 		System.out.println("----------------------------------------------------------------");
-		
-		for(int j = 0; j < Lista.size(); j++){
-			if(Lista.get(j).getNome().equals("TAM")){
-				System.out.println(Lista.get(j));
+		System.out.println("Companhias Iguais.");
+		for (int j = 0; j < ListaCiaAerea.size(); j++) {
+			if (ListaCiaAerea.get(j).getNome().equals("TAM")) {
+				System.out.println(ListaCiaAerea.get(j));
 			}
-			
+		}
+		System.out.println("----------------------------------------------------------------");
+		for(int i = 0; i < ListaAviao.size(); i++){
+			System.out.println("Dados Avião("+i+ "): "+ ListaAviao.get(i));
+		}
+		System.out.println("----------------------------------------------------------------");
+		System.out.println("Aviões Iguais.");
+		for(int j = 0; j < ListaAviao.size(); j++){
+			if(ListaAviao.get(j).getModelo().equals("BOEING747")){
+				System.out.println(ListaAviao.get(j).getModelo());
+			}	
 		}
 	}
 

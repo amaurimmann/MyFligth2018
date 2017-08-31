@@ -40,7 +40,7 @@ public class App {
 		
 		Voo voo1 = new Voo(r1, datahora1, duracao1);
 		Voo voo2 = new Voo(r1, duracao1);
-		
+		//
 		Geo poa = origem.getLocal();
 		Geo gru = destino.getLocal();
 		double dist = Geo.distancia(poa, gru);

@@ -50,6 +50,11 @@ public class CiaAerea {
 		ListaAviao = listaAviao;
 	}
 
+	public void addAviao(String modelos){
+		ArrayList<Aviao> ListaAviao = new ArrayList<>();//CRIANDO ARRAYLIST DE AVIÕES
+		Aviao aviao1 = new Aviao(modelos);
+		ListaAviao.add(aviao1);
+	}
 
 	@Override
 	public String toString() {

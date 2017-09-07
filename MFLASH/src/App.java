@@ -1,4 +1,5 @@
 //package pucrs.myflight.modelo;
+// AJUSTAR PACKAGE
 
 import java.time.LocalDateTime;
 import java.time.temporal.TemporalAdjusters;

@@ -7,6 +7,8 @@ public class App {
 		System.out.println("teste GITHUB");
 		
 		System.out.println("Teste 02");
+		
+		System.out.println("teste 03");
 
 		
 	}

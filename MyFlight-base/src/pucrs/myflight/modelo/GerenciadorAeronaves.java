@@ -30,12 +30,19 @@ public class GerenciadorAeronaves {
         return null;
     }
 	
-	public Aeronave buscarCapacidade(int capa) { // METODO QUE BUSCA CAPACIDADE NA LISTA
+	public Aeronave buscarCapacidade(int cap) { // METODO QUE BUSCA CAPACIDADE NA LISTA
         for (Aeronave nave: aeronaves)
-            if (capa == nave.getCapacidade())
+            if (cap == nave.getCapacidade())
                 return nave;
         // Não encontrou, retorna null
         return null;
     }
+
+	 public ArrayList<Aeronave> listarTodas() { // CRIA LISTA COM TODAS AS COMPANHIAS AEREAS
+		    ArrayList<Aeronave> nova = new ArrayList<>();
+		    for(Aeronave nave: aeronaves)
+		        nova.add(nave);
+	        return nova;
+	    }
 	
 }

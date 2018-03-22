@@ -1,5 +1,8 @@
 package pucrs.myflight.modelo;
 
+// https://github.com/matheusmorcinek/MyFlightPOO/blob/master/MyFlight-base/src/pucrs/myflight/modelo/Aeronave.java
+//modelo a seguir
+
 public class Aeronave {
 	private String codigo;
 	private String descricao;

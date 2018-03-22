@@ -1,5 +1,8 @@
 package pucrs.myflight.modelo;
 
+import java.time.Duration;
+import java.time.Instant;
+
 public class App {
 
 	public static void main(String[] args) {
@@ -37,7 +40,15 @@ public class App {
 		Rota rota3 = new Rota(cia3, aeroporto3, aeroporto4, nave3);
 		Rota rota4 = new Rota(cia4, aeroporto4, aeroporto3, nave4);
 		
-		//Voo voo1 = new Voo(rota1, datahora, duracao);
+		//Instant  inicio = Instant.now();
+		//Instant fim =Instant.now();
+		//Duration duracao = Duration.between(inicio, fim);
+		//long duracaoEmMilissegundos = duracao.toMillis();
+		
+		//Voo voo1 = new Voo(rota1, "2007-12-03T10:15:30",);
+		 
+		
+		//2007-12-03T10:15:30
 		
 		
 		/*Cadastre, pelo menos, todos os dados de cias aéreas, aeronaves, aeroportos

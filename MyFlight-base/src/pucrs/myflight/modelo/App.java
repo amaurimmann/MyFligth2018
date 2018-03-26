@@ -1,9 +1,9 @@
 package pucrs.myflight.modelo;
 
-import java.time.Duration;
-import java.time.Instant;
+//import java.time.Duration;
+//import java.time.Instant;
 import java.util.ArrayList;
-import java.util.Arrays;
+//import java.util.Arrays;
 
 public class App {
 
@@ -29,7 +29,7 @@ public class App {
 		cia.add(cia3);
 		cia.add(cia4);
 		
-		System.out.println(cia.toString()); //PRINTANDO NA TELA O ARRAYLIST D EOBJETOS COMPANHIAS AEREAS
+		System.out.println(cia.toString()); //PRINTANDO NA TELA O ARRAYLIST DE OBJETOS COMPANHIAS AEREAS
 
 		ArrayList<Aeronave> nave = new ArrayList<Aeronave>();
 
@@ -43,6 +43,8 @@ public class App {
 		nave.add(nave3);
 		nave.add(nave4);
 
+		System.out.println(nave.toString()); // PRINTANDO NA TELA O ARRAYLIST DE OBJETOS AERONAVES
+		
 		ArrayList<Geo> geo = new ArrayList<Geo>();
 
 		Geo geo1 = new Geo(-29.9939, -51.1711);
@@ -54,6 +56,8 @@ public class App {
 		geo.add(geo2);
 		geo.add(geo3);
 		geo.add(geo4);
+		
+		System.out.println(geo.toString());// PRINTANDO NA TELA O ARRAYLIST DE OBJETOS GEO
 		
 		ArrayList<Aeroporto> aeroporto = new ArrayList<Aeroporto>();
 
@@ -67,6 +71,8 @@ public class App {
 		aeroporto.add(aeroporto3);
 		aeroporto.add(aeroporto4);
 		
+		System.out.println(aeroporto.toString());// PRINTANDO NA TELA O ARRAYLIST DE OBJETOS AEROPORTOS
+		
 		ArrayList<Rota> rota = new ArrayList<Rota>();
 
 		Rota rota1 = new Rota(cia1, aeroporto1, aeroporto2, nave1);
@@ -78,6 +84,8 @@ public class App {
 		rota.add(rota2);
 		rota.add(rota3);
 		rota.add(rota4);
+		
+		System.out.println(rota.toString());// PRINTANDO NA TELA O ARRAYLIST DE OBJETOS ROTA
 		
 		
 		

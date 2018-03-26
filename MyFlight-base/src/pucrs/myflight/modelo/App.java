@@ -86,6 +86,8 @@ public class App {
 		rota.add(rota4);
 
 		System.out.println(rota.toString());// PRINTANDO NA TELA O ARRAYLIST DE OBJETOS ROTA
+		
+		//pesquisar sobre metódo local date time e duration
 
 		// Instant inicio = Instant.now();
 		// Instant fim =Instant.now();
@@ -94,12 +96,10 @@ public class App {
 
 		// ArrayList<Voo>voo = new Voo(rota1, 2007-12-03T10:15:30);
 
-		// 2007-12-03T10:15:30
-
-		/*
-		 * Cadastre, pelo menos, todos os dados de cias aéreas, aeronaves, aeroportos ,
-		 * rotas e vôos apresentados como exemplo
-		 */
+		/** Cadastre, pelo menos, todos os dados de cias aéreas, aeronaves, aeroportos ,
+		 * rotas e vôos apresentados como exemplo*/
+		
+		
 
 	}
 }

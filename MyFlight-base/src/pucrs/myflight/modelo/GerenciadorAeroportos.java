@@ -31,7 +31,7 @@ public Aeroporto  buscarNome(String nome) {//METODO QUE  BUSCA OBJETO PELO NOME
 
 public Aeroporto buscarGeo(String geo) {//METODO QUE  BUSCA OBJETO PELO CODIGO
 	for (Aeroporto aeros: aeroportos)
-        if (geo.equals(aeros.getLocal()))
+      if (geo.equals(aeros.getLocal()))
             return aeros;
     // Não encontrou, retorna null
     return null;

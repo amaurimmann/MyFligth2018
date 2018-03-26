@@ -17,21 +17,7 @@ public class App {
 
 		// System.out.println("https://github.com/matheusmorcinek/MyFlightPOO/blob/master/MyFlight-base/src/pucrs/myflight/modelo/Aeronave.java");
 
-		CiaAerea cia1 = new CiaAerea("JJ", "LATAM");
-		CiaAerea cia2 = new CiaAerea("G3", "GOL");
-		CiaAerea cia3 = new CiaAerea("TP", "TAP");
-		CiaAerea cia4 = new CiaAerea("AD", "AZUL");
-
-		ArrayList<CiaAerea> cia = new ArrayList<CiaAerea>();
-
-		cia.add(cia1);
-		cia.add(cia2);
-		cia.add(cia3);
-		cia.add(cia4);
-		
-		System.out.println(cia.toString()); //PRINTANDO NA TELA O ARRAYLIST DE OBJETOS COMPANHIAS AEREAS
-
-		ArrayList<Aeronave> nave = new ArrayList<Aeronave>();
+		ArrayList<Aeronave> nave = new ArrayList<Aeronave>();// CRIANDO UM ARRAYLIST DE OBJETOS DO TIPO AERONAVES
 
 		Aeronave nave1 = new Aeronave("733", "Boeing 737-300", 140);
 		Aeronave nave2 = new Aeronave("73G", "Boeing 737-700", 126);
@@ -44,8 +30,22 @@ public class App {
 		nave.add(nave4);
 
 		System.out.println(nave.toString()); // PRINTANDO NA TELA O ARRAYLIST DE OBJETOS AERONAVES
-		
-		ArrayList<Geo> geo = new ArrayList<Geo>();
+
+		ArrayList<CiaAerea> cia = new ArrayList<CiaAerea>();// CRIANDO UM ARRAYLIST DE OBJETOS DO TIPO CIAAEREA
+
+		CiaAerea cia1 = new CiaAerea("JJ", "LATAM");
+		CiaAerea cia2 = new CiaAerea("G3", "GOL");
+		CiaAerea cia3 = new CiaAerea("TP", "TAP");
+		CiaAerea cia4 = new CiaAerea("AD", "AZUL");
+
+		cia.add(cia1);
+		cia.add(cia2);
+		cia.add(cia3);
+		cia.add(cia4);
+
+		System.out.println(cia.toString()); // PRINTANDO NA TELA O ARRAYLIST DE OBJETOS COMPANHIAS AEREAS
+
+		ArrayList<Geo> geo = new ArrayList<Geo>();// CRIANDO UM ARRAYLIST DE OBJETOS DO TIPO GEO
 
 		Geo geo1 = new Geo(-29.9939, -51.1711);
 		Geo geo2 = new Geo(-23.4356, -46.4731);
@@ -56,46 +56,43 @@ public class App {
 		geo.add(geo2);
 		geo.add(geo3);
 		geo.add(geo4);
-		
+
 		System.out.println(geo.toString());// PRINTANDO NA TELA O ARRAYLIST DE OBJETOS GEO
-		
-		ArrayList<Aeroporto> aeroporto = new ArrayList<Aeroporto>();
+
+		ArrayList<Aeroporto> aeroporto = new ArrayList<Aeroporto>();// CRIANDO UM ARRAYLIST DE OBJETOS DO TIPO AEROPORTO
 
 		Aeroporto aeroporto1 = new Aeroporto("POA", "Salgado Filho Intl Apt", geo1);
 		Aeroporto aeroporto2 = new Aeroporto("GRU", "São Paulo Guarulhos Intl Apt", geo2);
 		Aeroporto aeroporto3 = new Aeroporto("LIS", "Lisbon", geo3);
 		Aeroporto aeroporto4 = new Aeroporto("MIA", "Miami International Apt", geo4);
-		
+
 		aeroporto.add(aeroporto1);
 		aeroporto.add(aeroporto2);
 		aeroporto.add(aeroporto3);
 		aeroporto.add(aeroporto4);
-		
+
 		System.out.println(aeroporto.toString());// PRINTANDO NA TELA O ARRAYLIST DE OBJETOS AEROPORTOS
-		
-		ArrayList<Rota> rota = new ArrayList<Rota>();
+
+		ArrayList<Rota> rota = new ArrayList<Rota>();// CRIANDO UM ARRAYLIST DE OBJETOS DO TIPO ROTA
 
 		Rota rota1 = new Rota(cia1, aeroporto1, aeroporto2, nave1);
 		Rota rota2 = new Rota(cia2, aeroporto2, aeroporto1, nave2);
 		Rota rota3 = new Rota(cia3, aeroporto3, aeroporto4, nave3);
 		Rota rota4 = new Rota(cia4, aeroporto4, aeroporto3, nave4);
-		
+
 		rota.add(rota1);
 		rota.add(rota2);
 		rota.add(rota3);
 		rota.add(rota4);
-		
+
 		System.out.println(rota.toString());// PRINTANDO NA TELA O ARRAYLIST DE OBJETOS ROTA
-		
-		
-		
 
 		// Instant inicio = Instant.now();
 		// Instant fim =Instant.now();
 		// Duration duracao = Duration.between(inicio, fim);
 		// long duracaoEmMilissegundos = duracao.toMillis();
 
-		// Voo voo1 = new Voo(rota1, "2007-12-03T10:15:30",);
+		// ArrayList<Voo>voo = new Voo(rota1, 2007-12-03T10:15:30);
 
 		// 2007-12-03T10:15:30
 

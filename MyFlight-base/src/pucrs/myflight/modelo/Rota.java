@@ -28,4 +28,11 @@ public class Rota {
 	public Aeronave getAeronave() {
 		return aeronave;
 	}
+
+	@Override
+	public String toString() {
+		return "\nRota [cia=" + cia + ", origem=" + origem + ", destino=" + destino + ", aeronave=" + aeronave + "]";
+	}
+	
+	
 }

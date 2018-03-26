@@ -44,5 +44,12 @@ public class GerenciadorAeronaves {
 		        nova.add(nave);
 	        return nova;
 	    }
+
+	@Override
+	public String toString() {
+		return "GerenciadorAeronaves [aeronaves=" + aeronaves + "]";
+	}
+	 
+	 
 	
 }

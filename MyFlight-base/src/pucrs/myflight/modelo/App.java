@@ -1,9 +1,9 @@
 package pucrs.myflight.modelo;
 
-//import java.time.Duration;
-//import java.time.Instant;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.Duration;
 import java.util.ArrayList;
-//import java.util.Arrays;
 
 public class App {
 
@@ -86,20 +86,32 @@ public class App {
 		rota.add(rota4);
 
 		System.out.println(rota.toString());// PRINTANDO NA TELA O ARRAYLIST DE OBJETOS ROTA
-		
-		//pesquisar sobre metódo local date time e duration
 
-		// Instant inicio = Instant.now();
-		// Instant fim =Instant.now();
-		// Duration duracao = Duration.between(inicio, fim);
-		// long duracaoEmMilissegundos = duracao.toMillis();
+		LocalDate localDate = LocalDate.now();
+		System.out.println("\n-----------------Classe Local Date: " + localDate); // CLASSE QUE TRAZ A DATA EXATA
 
-		// ArrayList<Voo>voo = new Voo(rota1, 2007-12-03T10:15:30);
+		LocalDateTime localdatetimeinicial = LocalDateTime.now();
+
+		LocalDateTime localdatetimefinal = LocalDateTime.now();
+
+		Duration duration = Duration.between(localdatetimeinicial, localdatetimefinal);
+
+		ArrayList<Voo> voo = new ArrayList<Voo>();
+
+		Voo voo1 = new Voo(rota1, localdatetimefinal, duration);
+		Voo voo2 = new Voo(rota2, localdatetimefinal, duration);
+		Voo voo3 = new Voo(rota3, localdatetimefinal, duration);
+		Voo voo4 = new Voo(rota4, localdatetimefinal, duration);
+
+		voo.add(voo1);
+		voo.add(voo2);
+		voo.add(voo3);
+		voo.add(voo4);
+
+		System.out.println("\n"+voo.toString());
 
 		/** Cadastre, pelo menos, todos os dados de cias aéreas, aeronaves, aeroportos ,
 		 * rotas e vôos apresentados como exemplo*/
-		
-		
 
 	}
 }

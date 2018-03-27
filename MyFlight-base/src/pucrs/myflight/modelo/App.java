@@ -3,6 +3,7 @@ package pucrs.myflight.modelo;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.Duration;
+import java.time.Instant;
 import java.util.ArrayList;
 
 public class App {
@@ -89,26 +90,36 @@ public class App {
 
 		LocalDate localDate = LocalDate.now();
 		System.out.println("\n-----------------Classe Local Date: " + localDate); // CLASSE QUE TRAZ A DATA EXATA
+		
+		Instant iInicial = Instant.now();
+		  try {
+		         Thread.sleep(1000);
+		  } catch (InterruptedException e) {
+		         e.printStackTrace();
+		  }
+		  Instant iFinal = Instant.now();
+		   
+		  Duration duration = Duration.between(iInicial, iFinal);
 
-		LocalDateTime localdatetimeinicial = LocalDateTime.now();
+		//LocalDateTime localdatetimeinicial = LocalDateTime.now();
 
-		LocalDateTime localdatetimefinal = LocalDateTime.now();
+		LocalDateTime localdatetimeAgora = LocalDateTime.now();
 
-		Duration duration = Duration.between(localdatetimeinicial, localdatetimefinal);
+		//Duration duration = Duration.between(iInicial, iFinal);
 
 		ArrayList<Voo> voo = new ArrayList<Voo>();
 
-		Voo voo1 = new Voo(rota1, localdatetimefinal, duration);
-		Voo voo2 = new Voo(rota2, localdatetimefinal, duration);
-		Voo voo3 = new Voo(rota3, localdatetimefinal, duration);
-		Voo voo4 = new Voo(rota4, localdatetimefinal, duration);
+		Voo voo1 = new Voo(rota1, localdatetimeAgora, duration);
+		Voo voo2 = new Voo(rota2, localdatetimeAgora, duration);
+		Voo voo3 = new Voo(rota3, localdatetimeAgora, duration);
+		Voo voo4 = new Voo(rota4, localdatetimeAgora, duration);
 
 		voo.add(voo1);
 		voo.add(voo2);
 		voo.add(voo3);
 		voo.add(voo4);
 
-		System.out.println("\n"+voo.toString());
+		System.out.println("\n"+voo.toString());// PRINTANDO NA TELA O ARRAYLIST DE OBJETOS VOO
 
 		/** Cadastre, pelo menos, todos os dados de cias aéreas, aeronaves, aeroportos ,
 		 * rotas e vôos apresentados como exemplo*/
